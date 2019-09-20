@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registracija ucenika</title>
+        <link rel="stylesheet" type= "text/css" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <form action="RegisterStudentServlet" method="GET">
+        <body>
+            <div class="loginbox">
+                <img src="images/login.png" class="avatar">
+                <h3>Registracija ucenika</h3>
+                <form>
+                    <p>Ime ucenika</p>
+                    <input type="text" name="name" placeholder="Unesite ime ucenika" required>
+
+                    <p>Ime roditelja ucenika</p>
+                    <input type="text" name="parents" placeholder="Ime jednog roditelja" required>
+
+                    <p>Prezime ucenika</p>
+                    <input type="text" name="surname" placeholder="Unesite prezime ucenika" required>
+
+                    <p>Godina rodjenja ucenika</p>
+                    <input type="text" name="dob" placeholder="Unesite godinu rodjenja ucenika"required>
+
+                    <p>Razred ucenika</p>
+                    <input type="text" name="clas" placeholder="Unesite razred ucenika (1-9)" required>
+
+                    <p>Odjeljenje ucenika</p>
+                    <input type="text" name="subclas" placeholder="Unesite odjeljenje ucenika (1-4)" required>
+                    <input type="submit" name="reg" value="Registruj ucenika">
+                </form>
+                <form action="teacher_index_page.jsp" method="POST">
+                    <input type="submit" name="ps" value=" Nazad na pocetnu stranicu">
+                </form>
+
+            </div>
+    </form>
+</body>
+</head>
+</html>
